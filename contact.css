@@ -77,23 +77,28 @@ select:focus {
     main {
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
     
     .schedule {
-        position: relative;
-        left: -55px;
         margin-top: 30px;
-        min-width: 300px;
+        width: 300px;
+        margin: 30px auto;
     }
     
 }
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 701px) and (max-width: 1200px) {
+    .information {
+        width: 300px;
+        margin: auto;
+    }
     .schedule {
         position: initial;
         left: 0;
         margin-left: 100px;
+
     }
 }
