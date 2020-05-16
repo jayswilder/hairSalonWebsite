@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EDEDED;
+}
+
+
+header {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4C8F96;
+    width: 100%;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav {
+    position: relative;
+    top: 15px;
+}
+
+header ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 1.1rem;
+    background-color: #1A1E33;
+    border-radius: 5px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+header h1 {
+    margin-right: 80px;
+    position: relative;
+    top: 25px;
+    letter-spacing: 2px;
+    padding: 20px;
+    background-color: #1A1E33;
+    color: white;
+    font-size: 3rem;
+}
+
+.highlight {
+    color: orangered;
+    font-weight: bolder;
+}
+
+header ul li a:hover {
+    color: #6cbbb6;
+}
+
+footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    text-align: center;
+    background-color: #4C8F96;
+    margin-bottom: 90px;
+}
+
+footer p {
+    margin-right: 200px;
+}
+
+footer .social {
+    background-color: rgb(50, 120, 128);
+    letter-spacing: 6px;
+    padding: 15px;
+}
+
+footer .social a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(41, 90, 95);
+}
+
+footer .social a:hover {
+    color: rgb(12, 32, 34);
+}
+
+
+@media screen and (max-width: 900px) {
+
+    header  {
+        height: 125px;
+        display: initial;
+    }
+
+    header h1 {
+        position: initial;
+        letter-spacing: 2px;
+        padding: 20px;
+        background-color: #1A1E33;
+        color: white;
+        font-size: 2.5rem;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, .5);
+    }
+
+    nav ul li a {
+        display: grid;
+        text-align: center;
+        padding: 15px;
+        margin: 0;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, .5);
+    }
+
+    nav {
+        top: 0;
+        background-color: #4C8F96;
+        padding: 25px;
+        width: 100%;
+    }
+
+    #home {
+        grid-area: home;
+    }
+
+    #about {
+        grid-area: about;
+    }
+
+    #hairstyles {
+        grid-area: hairstyles;
+    }
+
+    #news {
+        grid-area: news;
+    }
+
+    #contact {
+        grid-area: contact;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+    footer p {
+        margin: 0;
+    }
+
+    .social {
+        margin-top: 15px;
+    }
+
+
+    nav ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr .25fr 1fr;
+            grid-template-areas: 
+              "home news contact"
+              " . . ."
+              "about hairstyles hairstyles";
+          }
+
+    .li-center {
+            width: 95%;
+            margin: 0 auto;
+            background-color: #4C8F96;
+    }
+    
+}
+
+
+
+
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+
+    header  {
+        height: 125px;
+        display: initial;
+    }
+
+    header h1 {
+        position: initial;
+        letter-spacing: 2px;
+        padding: 20px;
+        background-color: #1A1E33;
+        color: white;
+        font-size: 5rem;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, .5);
+    }
+
+    nav ul li a {
+        display: grid;
+        font-size: 2rem;
+        text-align: center;
+        padding: 15px;
+        margin: 0;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, .5);
+    }
+
+    nav {
+        top: 0;
+        background-color: #4C8F96;
+        padding: 25px;
+    }
+
+    #home {
+        grid-area: home;
+    }
+
+    #about {
+        grid-area: about;
+    }
+
+    #hairstyles {
+        grid-area: hairstyles;
+    }
+
+    #news {
+        grid-area: news;
+    }
+
+    #contact {
+        grid-area: contact;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+    footer p {
+        margin: 0;
+    }
+
+    .social {
+        margin-top: 15px;
+    }
+
+
+    nav ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr .25fr 1fr;
+            grid-template-areas: 
+              "home news contact"
+              " . . ."
+              "about hairstyles hairstyles";
+          }
+
+    .li-center {
+            width: 90%;
+            margin: 0 auto;
+            background-color: #4C8F96;
+    }
+    
+}
+
